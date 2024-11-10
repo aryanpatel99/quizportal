@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #001e4d;
+    /* color: #fff; */
+}
+.app {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+.app h1 {
+    font-size: 26px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.quiz{
+    padding:20px 0;
+
+}
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding:10px;
+    margin:10px 0;
+    text-align:left;
+    border-radius: 4px;
+    cursor:pointer;
+    transition:all 0.3s;
+}
+.btn:hover:not([disabled]){      /*when we hover on the button, it will be disabled*/
+    background-color: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;    /*when we click on the button, it will be disabled*/
+}
+#nxt-btn{
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width:150px;
+    border:0;
+    padding:10px;
+    margin:20px auto 0;
+    border-radius: 4px;
+    cursor:pointer;
+    display: none; /*the button will be hidden, and will show after the we select any option*/
+    
+}
+
+.correct{
+    background-color: #9aeabc;
+    color: #222;
+}
+.incorrect{
+    background-color: #ff9393;
+    color: #222;
+}
+.explanation {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.explanation h3 {
+  margin-top: 0;
+  color: #007bff;
+}
